@@ -37,7 +37,7 @@ $dischi = [
     ],
     [
         "poster"=> "https://upload.wikimedia.org/wikipedia/en/9/97/Eric_Clapton_OMCOMR.jpg",
-        "title"=> "One more car, one more raider",
+        "title"=> "One more car, one more rider",
         "author"=> "Eric Clapton",
         "genre"=> "Rock",
         "year"=> "2002"

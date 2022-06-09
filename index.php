@@ -1,5 +1,7 @@
 
 <?php 
+  // ho utilizzato "include __DIR__ . '/database.php'" per poter andare a prendere i dati in un altro ducmento per poterli stampare ciclandoli creando il percorso
+  
   include __DIR__ . '/database.php' 
 ?>
 
