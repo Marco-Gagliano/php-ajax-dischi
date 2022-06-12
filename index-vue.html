@@ -13,8 +13,6 @@
   
   <link rel="stylesheet" href="css/style.css">
   
-  <script src="./js/script.js"></script>
-
   <title>Document</title>
 </head>
 <body>
@@ -22,15 +20,27 @@
 
     <div class="container">
 
-      <!-- <div v-for="(disco, index) in dischi" :key="index">
-        <img src="disco.poster" alt="">
+      <select v-model="genere"
+              @change="getApi()">
+        
+        <option value="">Seleziona un genere</option>
+        <option value="rock">Rock</option>
+        <option value="pop">Pop</option>
+        <option value="jazz">Jazz</option>
+        <option value="metal">Metal</option>
+    </select>
+
+      <div v-for="(disco, index) in dischi" :key="`disco-${index}`">
+        <img :src="disco.poster" :alt="disco.title">
         <h2>{{disco.title}}</h2>
         <p>{{disco.author}}</p>
         <p>{{disco.year}}</p>
-      </div> -->
+      </div>
 
     </div>
     
   </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
